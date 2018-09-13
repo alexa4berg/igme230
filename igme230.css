@@ -37,19 +37,32 @@ body {
 
 /* This styles my profile section */
 .profile {
-    margin-top: -3.5em; /* Sets a margin to push the container up so its overlapping under the image */
-    padding: 5em 1.5em 1.5em 1.5em; /* Sets padding around text to format text block */
-    background: white; /* Sets container color to white */
-    border-radius: 15px; /* Rounds corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Styles the drop shadow */
+    /* Sets a margin to push the container up so its overlapping under the image */
+    margin-top: -3.5em;
+    /* Sets padding around text to format text block */
+    padding: 5em 1.5em 1.5em 1.5em;
+    /* Sets container color to white */
+    background: white;
+    /* Rounds corners */
+    border-radius: 15px;
+    /* Styles the drop shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
+/* This styles my projects section */
 .projects {
+    /* Adds the space between the profile section (or container) and this section */
     margin-top: 1em;
+    /* Sets padding around text to format text block */
     padding: 2em 1.5em 1.5em 1.5em;
+    /* Sets container color to white */
     background: white;
+    /* Rounds corners */
     border-radius: 15px;
+    /* Styles the drop shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .profile-name {
@@ -67,7 +80,7 @@ body {
 }
 
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.5em;
 }
 

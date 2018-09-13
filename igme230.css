@@ -1,32 +1,47 @@
+/* This defines the style of the overall body elements which includes everything inside the 3 separate divs. Some styles eventually get overridden later on due to the cascading order of the style sheet*/
 body {
+    /* Max-width of the body is 30em - a measurement relative to the font height */
     max-width: 30em;
+    /* Automatically sets margins */
     margin-left: auto;
     margin-right: auto;
+    /* Creates 2em of padding around the body on all 4 sides */
     padding: 2em;
+    /* Sets background color to a light grey */
     background-color: #f2f2f2;
-    color: #444;
+    /* Sets font family and secondary family if first is not accessable */
     font-family: 'Lato', sans-serif;
+    /* Sets Lato fonts to light weight */
     font-weight: 300;
+    /* Sets space between lines */
     line-height: 1;
+    /* Aligns text to center */
     text-align: center;
 }
 
+/* This styles my profile image */
 .profile-img {
+    /* Makes it a block level element */
     display: block;
+    /* Sets height */
     height: 7em;
+    /* Automatically sets margins */
     margin-right: auto;
     margin-left: auto;
     border: 0em solid #f2f2f2;
+    /* Rounds off picture corner borders to create circle shape */
     border-radius: 100%;
+    /* Styles drop shadow */
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* This styles my profile section */
 .profile {
-    margin-top: -3.5em;
-    padding: 5em 1.5em 1.5em 1.5em;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -3.5em; /* Sets a margin to push the container up so its overlapping under the image */
+    padding: 5em 1.5em 1.5em 1.5em; /* Sets padding around text to format text block */
+    background: white; /* Sets container color to white */
+    border-radius: 15px; /* Rounds corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Styles the shadow */
 }
 
 .projects {
@@ -38,10 +53,10 @@ body {
 }
 
 .profile-name {
-    margin-right: -1em;
+    margin-right: 0em;
     margin-bottom: .75em;
-    margin-left: -1em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 0em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding-bottom: .75em;
     font-size: 2em;
     font-family: 'Playfair Display', serif;

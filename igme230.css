@@ -108,7 +108,16 @@ h1 {
     text-align: center;
 }
 
-/* Sets the table width to 100% */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+    width: 50%;
+    margin: auto;
+}
+
+/* Sets the table width to 100%
 table {
     width: 100%;
 }
@@ -118,3 +127,5 @@ td {
     vertical-align: middle;
     padding: 3px;
 }
+
+*/

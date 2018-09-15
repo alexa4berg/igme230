@@ -1,72 +1,50 @@
-/* This defines the style of the overall body elements which includes everything inside the 3 separate divs. Some styles eventually get overridden later on due to the cascading order of the style sheet*/
+/* Sets the entire background to a light grey */
 body {
-    /* Sets background color to a light grey */
     background-color: #f2f2f2;
-
 }
 
-/* This styles my h1, establishing the font and font size */
+/* Sets h1 font to Playfair Display size 1.5em */
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
 }
 
+/* Contains and sets some styles for the 3 main containers; profile, projects, and exercises */
 #wrapper {
-    /* Max-width of the body is 30em - a measurement relative to the font height */
     max-width: 30em;
-    /* Automatically sets margins */
     margin: 0 auto;
-    /* Creates 2em of padding around the body on all 4 sides */
     padding: 2em;
-    /* Sets background color to a light grey */
-    /* background-color: #f2f2f2; */
-    /* Sets font family and secondary family if first is not accessable */
+    /* Sets font family and secondary family if first is not accessible */
     font-family: 'Lato', sans-serif;
-    /* Sets Lato fonts to light weight */
     font-weight: 300;
-    /* Sets space between lines */
     line-height: 1;
-    /* Aligns text to center */
     text-align: center;
 }
 
 
-/* This styles my profile image */
+/* Styles profile image */
 .profile-img {
-    /* Makes it a block level element */
-   /* display: block; */
-    /* Sets height */
     height: 8em;
-    /* Automatically sets margins */
-    /*margin-right: auto;
-    margin-left: auto;
-    border: 0em solid #f2f2f2; */
     /* Rounds off picture corner borders to create circle shape */
     border-radius: 100%;
     /* Styles drop shadow */
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* This styles my profile section */
+/* Styles profile container */
 .profile {
-    /* Sets a margin to push the container up so its overlapping under the image */
+    /* Sets a negative margin to push the container up so its under the profile image */
     margin-top: -3.5em;
-    /* Sets padding around text to format text block */
     padding: 5em 1.5em 1.5em 1.5em;
-    /* Sets container color to white */
     background: white;
-    /* Rounds corners */
+    /* Rounds container corners */
     border-radius: 15px;
-    /* Styles the drop shadow */
+    /* Styles container drop shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 }
 
-/* This styles my profile name */
+/* Styles my profile name */
 .profile-name {
-   /* margin-right: 0em;
-    margin-bottom: .75em;
-    margin-left: 0em; */
     /* Adds a 2px line on the bottom border */
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding-bottom: .75em;
@@ -75,45 +53,45 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-/* This styles my profile title "IMGE 230" making the color an alpha of black */
+/* Styles my profile title "IMGE 230" making the color an alpha of black */
 .profile-title {
     color: rgba(0, 0, 0, 0.5);
 }
 
 
-/* This styles my projects section */
+/* Styles my projects container */
 .projects {
-    /* Adds the space between the profile section (or container) and this section */
+    /* Adds the space between the profile container and projects container */
     margin-top: 1em;
-    /* Sets padding around text to format text block */
     padding: 2em 1.5em 1.5em 1.5em;
-    /* Sets container color to white */
     background: white;
-    /* Rounds corners */
+    /* Rounds container corners */
     border-radius: 15px;
-    /* Styles the drop shadow */
+    /* Styles container drop shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 }
 
-/* This styles my exercises section */
+/* Styles my exercises container */
 .exercises {
+    /* Adds the space between the projects container and exercises container */
     margin-top: 1em;
     padding: 2em 1.5em 1.5em 1em;
     background: white;
-    /* Rounds corners */
+    /* Rounds container corners */
     border-radius: 15px;
-    /* Styles the drop shadow */
+    /* Styles container drop shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
+/* Styles un-ordered list of exercises */
 ul {
+    /* Removes default styling */
     list-style-type: none;
     margin: 0;
     padding: 0;
+    /* Creates 2 column format */
     column-count: 2;
     width: 50%;
     margin: auto;
 }
-

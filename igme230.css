@@ -1,3 +1,5 @@
+/* Alexa Forberg - Project 1 */
+
 /* Sets the entire background to a light grey */
 body {
     background-color: #f2f2f2;
@@ -9,7 +11,7 @@ h1 {
     font-size: 1.5em;
 }
 
-/* Contains and sets some styles for the 3 main containers; profile, projects, and exercises */
+/* Contains and sets some styles for the 3 main containers; profile, projects, and exercises. The max with the container can expand to is 30em. The margin left and right is 0 and top and bottom is set to auto, centering the container, along with 2em padding all around. Sets the font and text styles  */
 #wrapper {
     max-width: 30em;
     margin: 0 auto;
@@ -22,7 +24,7 @@ h1 {
 }
 
 
-/* Styles profile image */
+/* Styles profile image. Image gets sized to 8em with a rounded circle border and a drop shadow thats an alpha value of black */
 .profile-img {
     height: 8em;
     /* Rounds off picture corner borders to create circle shape */
@@ -31,7 +33,7 @@ h1 {
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Styles profile container */
+/* Styles profile container. Moves container up with a nagative margin to be under profile img. Adds padding all around. Makes the container white with rounded corners and a drop shadow */
 .profile {
     /* Sets a negative margin to push the container up so its under the profile image */
     margin-top: -3.5em;
@@ -43,7 +45,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles my profile name */
+/* Styles my profile name. Sets font and size to 2em Playfair Display. Adds some space under a 2px line on the border bottom before the profile title "IGME 230" */
 .profile-name {
     /* Adds a 2px line on the bottom border */
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -59,7 +61,7 @@ h1 {
 }
 
 
-/* Styles my projects container */
+/* Styles my projects container. Adds space above the container from the previous on top. Makes the container white with rounded corners and a drop shadow */
 .projects {
     /* Adds the space between the profile container and projects container */
     margin-top: 1em;
@@ -71,7 +73,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles my exercises container */
+/* Styles my exercises container. /* Adds space above the container from the previous on top. Makes the container white with rounded corners and a drop shadow */
 .exercises {
     /* Adds the space between the projects container and exercises container */
     margin-top: 1em;
@@ -81,10 +83,9 @@ h1 {
     border-radius: 15px;
     /* Styles container drop shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
 }
 
-/* Styles un-ordered list of exercises */
+/* Styles un-ordered list of exercises, creates an un-styles un-ordered list arranged in 2 columns */
 ul {
     /* Removes default styling */
     list-style-type: none;

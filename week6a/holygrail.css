@@ -2,14 +2,18 @@
 General Formatting Rules
 ************************/
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 html {
     /* set base font-size for document; will be used for rem calculations */
     font-size: 16px;
 }
 
-html, body, #wrapper {
+html,
+body,
+#wrapper {
     /* resets margins to prevent sizing issues */
     margin: 0;
 }
@@ -23,8 +27,11 @@ Flexbox Formatting
     margin: 0 auto;
     max-width: 95vw;
     display: flex;
+    /* The wrapper uses a column-based flex layout so that the three elements stack */
     flex-direction: column;
+    /* Forces the footer to the bottom of the page when the columns are short */
     min-height: 100vh;
+
 }
 
 main {
@@ -34,19 +41,23 @@ main {
     background-color: #ccc;
     margin: .5rem 0;
     display: flex;
+    /* The main uses a row-based layout to place the content elements side-by-side. */
     flex-direction: row;
+    /* Explicitly tells the main element that it should grow to fill the avaiable space. */
     flex: 1
-
 }
 
-header, footer {
+header,
+footer {
 
     /* formatting for visual clarity */
     background-color: lightblue;
     padding: 0 .5rem;
 }
 
-article, nav, aside {
+article,
+nav,
+aside {
 
     /* formatting for visual clarity */
     border: 1px dotted black;
@@ -55,3 +66,18 @@ article, nav, aside {
     padding: .5rem;
 }
 
+nav {
+    /* Changes the order of the columns. Since the default value is 0, this will force it to display first in the row. */
+    order: -1;
+}
+
+aside,
+nav {
+    /* Makes the aside and nav elements a fixed width of 12rem (192px since our base font is 16px) */
+    flex: 0 0 12rem.
+}
+
+article {
+    /* Makes the article element grow to fit the available remaining space */
+    flex: 1;
+}

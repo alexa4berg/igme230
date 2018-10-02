@@ -81,3 +81,25 @@ article {
     /* Makes the article element grow to fit the available remaining space */
     flex: 1;
 }
+
+/* Adds a media query for viewports smaller than 36rems */
+@media screen and (max-width: 36rem) {
+
+    main {
+        flex-direction: column;
+        width 100vw;
+        /* Makes the content takes up the full width of the viewport */
+        max-width: none;
+    }
+
+    nav,
+    aside,
+    article {
+        order: 0;
+        /* resets order to source default */
+        flex: 1;
+        /* allows elements to grow to available space */
+        margin: .5rem 0;
+        /* removes l/r margin spacing */
+    }
+}

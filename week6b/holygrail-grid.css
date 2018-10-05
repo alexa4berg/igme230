@@ -42,6 +42,10 @@ aside {
 Grid Formatting
 *****************/
 
+/* Grid allows us to define both rows and columns, so we're still going to use a #wrapper div for the grid structure with no main container */
+
+/* On a small screen, we'll set the height to 100vh, designate five grid template areas for the five content elements (which allows us to easily specify display order), and set five row heights as proportional components of the wrapper. */
+
 #wrapper {
     display: grid;
     height: 100vh;
@@ -49,6 +53,8 @@ Grid Formatting
     grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
 
 }
+
+/* Because we're going to define two different grids (one for mobile and one for desktop), we're going to name the various elements in the grid rather than using numeric values. */
 
 header {
     grid-area: header;
@@ -69,6 +75,8 @@ aside {
 footer {
     grid-area: footer
 }
+
+/* Redefining the grid from 1x5 to 3x3, by specifying three content elements for each of threw rows. Then defining the height for each of the three rows, and the width for each of the three columns */
 
 @media screen and (min-width: 760px) {
     #wrapper {

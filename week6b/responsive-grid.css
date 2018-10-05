@@ -35,20 +35,25 @@ body {
 Grid Formatting
 **************/
 
+/* A page that creates as many grid columns as possible, with a minimum size of 250px and a maximum size of 1 equal fraction of the container, and resizes the images to take up the full size of the column they're in */
+
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: .5rem;
-    max-width: 95vw;
+    max-width: 95vw; /* to provide some space on either side */
+    /* to provide some space above and below, and an auto margin for left and right so that it centers */
     margin: .5rem auto;
 }
 
 img {
-    display: block;
-    width: 100%;
+    display: block; /* so we can control the box properly */
+    width: 100%; /* so that the image scales proportionally in its container (the grid cell) */
     border:2px solid #000;
     border-radius: 5px;
 }
+
+/* To hide the warning on browsers that support grid. Using a feature query--it works very much like a media query, but instead of checking for screen size, it checks to see if a browser supports a specific CSS feature */
 
 @supports (display: grid) {
                 .warning {

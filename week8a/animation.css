@@ -77,6 +77,14 @@ main {
  CSS Animation
 **************/
 
+@keyframes entrance {
+    from{transform: translateX(-2000px);}
+    to {transform: translateX(0);}
+}
+
+main div {
+    animation: entrance .5s linear both;
+}
 
 
 

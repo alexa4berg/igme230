@@ -102,4 +102,6 @@ main div:nth-child(4) {
 animation: entrance .5s .5s linear both;
 }
 
+main img { transition: all .2s ease-in-out; }
+main img:hover { transform: scale(1.1); }
 

@@ -1,0 +1,151 @@
+/*****************
+General Formatting
+*****************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background: #F0F0F0;
+    margin: 0;
+}
+
+
+
+/**************
+Grid Formatting
+**************/
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 7rem;
+    max-width: 90vw;
+    /* to provide some space on either side */
+    /* to provide some space above and below, and an auto margin for left and right so that it centers */
+    margin: .5rem auto;
+    align-self: center;
+    /* keep gallery from going to edge of viewport */
+}
+
+img {
+    display: block;
+    /* so we can control the box properly */
+    width: 100%;
+    /* so that the image scales proportionally in its container (the grid cell) */
+    /* border: 2px solid #000;
+    border-radius: 10px; */
+}
+
+main img:hover {
+    transform: scale(1.1);
+}
+
+/**************
+Footer Formatting
+**************/
+
+footer {
+    background-color: #6464f0;
+    padding: 90px 0px 60px 0px;
+}
+
+#footer-wrapper {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+    display: block;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+footer a:hover {
+    color: #383838;
+}
+
+footer h4 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+footer p {
+    line-height: 1.7;
+    margin-bottom: 45px;
+    font-size: 1.2rem;
+    color: #fefefe;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#get-in-touch {
+    max-width: 480px;
+    margin-right: 1px;
+    padding: 0px 0px;
+}
+
+#contact {
+    max-width: 300px;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: 'ambroise-std', serif;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    font-weight: 400;
+}
+
+#email {
+    font-family: 'ambroise-std', serif;
+    font-size: 2.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+     #footer-wrapper {
+        padding: 0px 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+     #footer-content {
+        flex-wrap: wrap;
+    }

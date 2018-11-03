@@ -54,6 +54,7 @@ p {
     flex-direction: column;
     border-bottom: 1px solid #F2F2F2;
     padding: 2.3em 0;
+    align-items: center;
 }
 
 .logo {

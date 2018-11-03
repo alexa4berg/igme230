@@ -68,6 +68,10 @@ nav {
     margin: 1.5em 0 0 5%;
 }
 
+/*
+   More info on block, inline-block, inline
+   https://www.w3schools.com/css/css_inline-block.asp
+   */
 header ul li {
     display: inline;
     padding: 0 1.4em 0 0;
@@ -95,11 +99,11 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
-    width:50%%
+    width:50%k
     height:auto;
 }
 
-/* Gallery Grid */
+/*CSS Grid on watch-grid container*/
 
 .gallery-grid {
     display: grid;

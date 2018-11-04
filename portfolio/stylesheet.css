@@ -47,7 +47,9 @@ p {
 }
 
 
-/*Header*/
+/**************************************
+Header
+**************************************/
 
 .header-container {
     display: flex;
@@ -97,7 +99,13 @@ body nav#top ul #active a {
     font-weight: 300;
 }
 
-/* Project Page */
+/**************************************
+Project Page
+**************************************/
+.projecttopimagecontainer {
+    width: 30vw;
+}
+
 .projectpage-image {
     display: block;
     margin-left: auto;
@@ -107,18 +115,23 @@ body nav#top ul #active a {
     height: auto;
 }
 
-/* Alexa Image */
+/**************************************
+Alexa Image
+**************************************/
 .alexaprofileimage {
     width: 20vw;
     margin: auto;
 }
+
 .alexa {
     display: block;
     width: 20vw;
     height: auto;
 }
 
-/*Project Grid */
+/**************************************
+Project Grid
+**************************************/
 
 .gallery-grid {
     display: grid;
@@ -135,7 +148,7 @@ body nav#top ul #active a {
 
 .project-image {
     display: block;
-    width: 95vw;
+    width: 100%;
     height: auto;
     vertical-align: middle;
 
@@ -152,9 +165,37 @@ body nav#top ul #active a {
     margin-top: 2px;
 }
 
+/**************************************
+Footer
+**************************************/
+
+footer {
+    padding: 3.3em;
+    text-align: center;
+    max-width: 2000px;
+}
+
+footer p {
+    font-family: Roboto, sans-serif;
+    font-size: 0.7em;
+    font-weight: 300;
+    color: #A4A4A4;
+    line-height: 130%;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #A4A4A4;
+}
+
+footer img {
+    padding: 0.4em 0 1.3em 0;
+}
 
 
-/*Media Query - screen larger then 420px*/
+/**************************************
+Media Queries
+**************************************/
 
 @media screen and (min-width : 420px) {
     .gallery-grid {
@@ -221,32 +262,6 @@ body nav#top ul #active a {
     }
 
     .project-image {
-        width: 370px;
+        width: 100%;
     }
-}
-
-
-/*Footer*/
-
-footer {
-    padding: 3.3em;
-    text-align: center;
-    max-width: 2000px;
-}
-
-footer p {
-    font-family: Roboto, sans-serif;
-    font-size: 0.7em;
-    font-weight: 300;
-    color: #A4A4A4;
-    line-height: 130%;
-}
-
-footer p a {
-    text-decoration: none;
-    color: #A4A4A4;
-}
-
-footer img {
-    padding: 0.4em 0 1.3em 0;
 }

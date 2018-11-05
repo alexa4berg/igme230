@@ -102,16 +102,23 @@ body nav#top ul #active a {
 /**************************************
 Project Page
 **************************************/
-.projecttopimagecontainer {
-    width: 30vw;
+.topprojectimagecontainer {
+    width: 90%;
+    margin: 0 auto;
 }
-
+.projectimagecontainer{
+    width: 75%;
+    margin: 0 auto;
+}
+.projectimagecontainer img{
+    width: 100%;
+}
 .projectpage-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
-    width: 50%;
+    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -135,7 +142,7 @@ Alexa Image
 
 .alexa {
     display: block;
-    width: 20vw;
+    width: 100%;
     height: auto;
 }
 

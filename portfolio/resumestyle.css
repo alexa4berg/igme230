@@ -1,16 +1,18 @@
-/* Resume print friendly page css*/
+/**************************************
+Print Friendly CSS Resume
+**************************************/
 
 
-/* Sets the page size for print, gives space along the for the priner*/
+/* Sets the page size for print, gives space along the edge */
 
 @page {
+    /* Standard page size*/
     size: A4;
-    /* standard paper size*/
     margin: 3cm;
 }
 
 
-/*Setting all base margins to zero, setting defult font size */
+/* Setting all base margins to zero, setting defult font size */
 
 html {
     margin: 0;
@@ -23,7 +25,7 @@ html {
 
 h1 {
     float: left;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
     margin: 0;
     margin-bottom: 5px;
@@ -32,7 +34,7 @@ h1 {
 }
 
 
-/* Heading 2, Titles for resume sections*/
+/* Heading 2, Titles for resume sections */
 
 h2 {
     font-size: 16px;
@@ -41,7 +43,7 @@ h2 {
 }
 
 
-/* Discription/subtitle under the title */
+/* Title subtitle */
 
 h3 {
     float: left;
@@ -53,7 +55,6 @@ h3 {
     margin-left: 20px;
     width: 100%;
 
-    /* it at 100% so the columns that are floating left dont overlap the heading*/
 }
 
 
@@ -77,10 +78,12 @@ p {
 }
 
 
-/* drop down menu*/
+/**************************************
+Drop Down Menu
+**************************************/
 
 
-/* this is the styles for the word menu, when hoverd the hidden menu appears*/
+/* Menu appears on hover */
 
 .dropdown {
     float: right;
@@ -92,7 +95,7 @@ p {
 }
 
 
-/* this is the content that shows up when the menu is hoverd on, its display is set to none so its not always visiable in the page, its display gets changed to block on the hover which makes it displaye, */
+/* Content shown when on hover */
 
 .dropdown-content {
     display: none;
@@ -104,14 +107,14 @@ p {
 }
 
 
-/*shows the drop down menu content on a hover */
+/* Shows the drop down menu content on a hover */
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
-/* link styles*/
+/* Link styles */
 
 a {
     color: white;

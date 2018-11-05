@@ -1,3 +1,6 @@
+/**************************************
+Global Styles
+**************************************/
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@ html {
     background: #fff;
 }
 
+/* Sets the body styles, including many decorative styles and sets max width to contol content width */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -17,15 +21,16 @@ body {
     margin: auto;
 }
 
+/* Sets the h1 styles */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4em;
-    font-weight: 200;
-    color: #7D7C7D;
-    padding-top: 1.5em;
+    font-size: 2em;
+    font-weight: 700;
+    color: #8175f7;
     text-align: center;
 }
 
+/* Sets the h2 styles */
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
@@ -35,21 +40,24 @@ h2 {
     text-align: center;
 }
 
+/* Sets the h2 styles specifically for project pages */
 .h2project {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     font-weight: 200;
     color: #7D7C7D;
-    padding-top: 1.5em;
+    padding-top: 1em;
     text-align: center;
 }
 
+/* Sets the h3 styles */
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.1em;
     font-weight: 500;
 }
 
+/* Sets the paragraph styles, aligns all paragraph text left for reading alignment and sets max-width to reduce long sentence lengths */
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -58,14 +66,17 @@ p {
     max-width: 90%;
 }
 
+/* Styles the footer paragraph text to be different than the rest, it is centered */
 footer p {
     text-align: center;
 }
+
 
 /**************************************
 Header
 **************************************/
 
+/* Creates and styles the flex navigation container */
 .header-container {
     display: flex;
     flex-direction: column;
@@ -86,52 +97,49 @@ nav {
     margin: 1.5em 0 0 5%;
 }
 
+/* Uses an unordered list to create nav */
 header ul li {
     display: inline;
     padding: 0 1.4em 0 0;
     font-size: 0.9em;
 }
 
+/* Sets styles for navigation when hover is not active */
 header ul li a {
     text-decoration: none;
     color: #7D7C7D;
 }
 
-
+/* On hover the options turn purple with a thin line below */
 nav ul li a:hover {
     color: #8175f7;
     border-bottom: 2px solid #8175f7;
     font-weight: 300;
 }
 
-li a:hover {
-    color: #B6B6B6;
-}
-
-body nav#top ul #active a {
-    color: #000000;
-    border-bottom: 2px solid #000000;
-    font-weight: 300;
-}
-
 /**************************************
-Project Page
+Project Pages
 **************************************/
+
+/* Container for the main top image */
 .topprojectimagecontainer {
     width: 90%;
     margin: 2em auto;
 
 }
 
+/* Container for the sub images */
 .projectimagecontainer {
     width: 75%;
     margin: 0 auto;
 }
 
+/* Sub-image */
 .projectimagecontainer img {
     width: 100%;
 }
 
+/* Styles for the main image */
 .projectpage-image {
     display: block;
     margin-left: auto;
@@ -141,25 +149,19 @@ Project Page
     height: auto;
 }
 
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
-}
-
 
 /**************************************
 Alexa Image
 **************************************/
+
+/* Container for my profile image */
 .alexaprofileimage {
     width: 20vw;
     margin: 20px auto;
 
 }
 
+/* Profile image styles */
 .alexa {
     display: block;
     width: 100%;
@@ -168,9 +170,10 @@ Alexa Image
 }
 
 /**************************************
-Project Grid
+Project Gallery Grid
 **************************************/
 
+/* Creates main gallery grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: 100%;
@@ -179,18 +182,23 @@ Project Grid
     justify-content: center;
 }
 
+/* Container for individual gallery info. Animation applied to scale up on hover */
 .project {
     width: 95vw;
     margin: 10px auto;
-    transition: transform .2s;
     /* Animation */
+    transition: transform .2s;
+
 }
 
+/* Scales up image while hovering with a slight animation to cerate a smooth look */
 .project:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
+    /* (Note: if the zoom is too large, it will go outside of the viewport) */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Styles for the project images in the containers */
 .project-image {
     display: block;
     width: 100%;
@@ -199,11 +207,13 @@ Project Grid
 
 }
 
+/* Styles for the project info in the project containers */
 .project-info {
     margin: 15px auto;
     text-align: center
 }
 
+/* Overrides paragraph align left to center paragraph project info */
 .project-info p {
     font-size: 0.85em;
     font-weight: 500;
@@ -211,6 +221,7 @@ Project Grid
     text-align: center;
 }
 
+/* Overrides paragraph align left to center paragraph content info */
 .contactinfo p {
     text-align: center;
 }
@@ -220,12 +231,14 @@ Project Grid
 Footer
 **************************************/
 
+/* General footer styles */
 footer {
     padding: 3.3em;
     text-align: center;
     max-width: 2000px;
 }
 
+/* Sets footer paragraph styles */
 footer p {
     font-family: Roboto, sans-serif;
     font-size: 0.7em;
@@ -234,11 +247,7 @@ footer p {
     line-height: 130%;
 }
 
-footer p a {
-    text-decoration: none;
-    color: #A4A4A4;
-}
-
+/*  */
 footer img {
     padding: 0.4em 0 1.3em 0;
 }
@@ -248,11 +257,10 @@ footer img {
 Media Queries
 **************************************/
 
+/* Screens larger than 420px */
 @media screen and (min-width : 420px) {
 
-    /*   *{
-        border: 1px solid red;
-    } */
+
     .gallery-grid {
         grid-template-columns: 50% 50%;
         margin-top: 54px;
@@ -291,6 +299,7 @@ Media Queries
     }
 }
 
+/* Screens larger than 769px */
 @media screen and (min-width : 769px) {
     .gallery-grid {
         grid-template-columns: 33.33% 33.33% 33.33%;
@@ -313,6 +322,7 @@ Media Queries
 
 }
 
+/* Screens larger than 1200px */
 @media screen and (min-width : 1200px) {
     body {
         max-width: 1200px;

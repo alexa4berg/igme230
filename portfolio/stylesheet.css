@@ -31,6 +31,15 @@ h2 {
     font-size: 1.4em;
     font-weight: 200;
     color: #7D7C7D;
+    padding-top: .5em;
+    text-align: center;
+}
+
+.h2project {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #7D7C7D;
     padding-top: 1.5em;
     text-align: center;
 }
@@ -43,7 +52,10 @@ h3 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.85em;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 
@@ -104,15 +116,19 @@ Project Page
 **************************************/
 .topprojectimagecontainer {
     width: 90%;
-    margin: 0 auto;
+    margin: 2em auto;
+
 }
-.projectimagecontainer{
+
+.projectimagecontainer {
     width: 75%;
     margin: 0 auto;
 }
-.projectimagecontainer img{
+
+.projectimagecontainer img {
     width: 100%;
 }
+
 .projectpage-image {
     display: block;
     margin-left: auto;
@@ -215,7 +231,8 @@ Media Queries
 **************************************/
 
 @media screen and (min-width : 420px) {
- /*   *{
+
+    /*   *{
         border: 1px solid red;
     } */
     .gallery-grid {
@@ -251,43 +268,44 @@ Media Queries
         margin: 0 0.8em 0 0;
     }
 
-        .column {
-            flex: 80%;
-        }
+    .column {
+        flex: 80%;
+    }
+}
+
+@media screen and (min-width : 769px) {
+    .gallery-grid {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        margin-top: 54px;
     }
 
-    @media screen and (min-width : 769px) {
-        .gallery-grid {
-            grid-template-columns: 33.33% 33.33% 33.33%;
-            margin-top: 54px;
-        }
-
-        .project {
-            width: 31vw;
-            margin: auto;
-
-        }
-
-        .project-image {
-            width: 31vw;
-        }
-        .column {
-            width: 100%;
-        }
+    .project {
+        width: 31vw;
+        margin: auto;
 
     }
 
-    @media screen and (min-width : 1200px) {
-        body {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .project {
-            width: 370px;
-        }
-
-        .project-image {
-            width: 100%;
-        }
+    .project-image {
+        width: 31vw;
     }
+
+    .column {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width : 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .project {
+        width: 370px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+}

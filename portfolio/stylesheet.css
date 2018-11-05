@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Saira, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: #000000;
     max-width: 1200px;
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-family: "Avenir Next", sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     font-weight: 200;
     color: #7D7C7D;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Avenir Next", sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     font-weight: 200;
     color: #7D7C7D;
@@ -36,13 +36,13 @@ h2 {
 }
 
 h3 {
-    font-family: "Avenir Next", sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.1em;
     font-weight: 500;
 }
 
 p {
-    font-family: "Avenir Next", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.85em;
 }
 
@@ -114,6 +114,16 @@ Project Page
     width: 50%;
     height: auto;
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
 
 /**************************************
 Alexa Image
@@ -198,6 +208,9 @@ Media Queries
 **************************************/
 
 @media screen and (min-width : 420px) {
+ /*   *{
+        border: 1px solid red;
+    } */
     .gallery-grid {
         grid-template-columns: 50% 50%;
         margin-top: 54px;
@@ -230,38 +243,44 @@ Media Queries
         align-self: center;
         margin: 0 0.8em 0 0;
     }
-}
 
-@media screen and (min-width : 769px) {
-    .gallery-grid {
-        grid-template-columns: 33.33% 33.33% 33.33%;
-        margin-top: 54px;
+        .column {
+            flex: 80%;
+        }
     }
 
-    .project {
-        width: 31vw;
-        margin: auto;
+    @media screen and (min-width : 769px) {
+        .gallery-grid {
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            margin-top: 54px;
+        }
+
+        .project {
+            width: 31vw;
+            margin: auto;
+
+        }
+
+        .project-image {
+            width: 31vw;
+        }
+        .column {
+            width: 100%;
+        }
 
     }
 
-    .project-image {
-        width: 31vw;
+    @media screen and (min-width : 1200px) {
+        body {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .project {
+            width: 370px;
+        }
+
+        .project-image {
+            width: 100%;
+        }
     }
-
-
-}
-
-@media screen and (min-width : 1200px) {
-    body {
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .project {
-        width: 370px;
-    }
-
-    .project-image {
-        width: 100%;
-    }
-}

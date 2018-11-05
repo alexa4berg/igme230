@@ -1,0 +1,127 @@
+/* resume print friendly page css*/
+
+
+/* this sets the page size for print, gives space along the for the priner*/
+
+@page {
+    size: A4;
+    /* standard paper size*/
+    margin: 3cm;
+}
+
+
+/*setting all base margins to zerso, setting defult font size, whenusing ems its necesarry, setting my sans-serif font defaults, does through list baised on the browsers capabilities */
+
+html {
+    margin: 0;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* this is the div i have the drop down menu in so it doesnt go all the way to the right on the page, it stops at the right side of the resume*/
+
+.head {
+    max-width: 600px;
+}
+
+
+/* basic heading styles, have it floating left so my menu can be at the same level on the rigth */
+
+h1 {
+    float: left;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 5px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+/* heading 2, titles for resume sections*/
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+/* this is for the discription/subtitle under the title */
+
+h3 {
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: grey;
+    font-weight: 100;
+    margin-left: 20px;
+    width: 100%;
+    /* it at 100% so the columns that are floating left dont overlap the heading*/
+}
+
+
+/* these are the columns i have the body text in, they float left so when the page gets too small they go into a single column  */
+
+.c {
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+}
+
+
+/* basic styles for paragrapgh*/
+
+p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+
+/* drop down menu*/
+
+
+/* this is the styles for the word menu, when hoverd the hidden menu appears*/
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    color: lightpink;
+    margin: 10px;
+    margin-right: 35px;
+}
+
+
+/* this is the content that shows up when the menu is hoverd on, its display is set to none so its not always visiable in the page, its display gets changed to block on the hover which makes it displaye, */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 50px;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+
+/*shows the drop down menu content on a hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* link styles*/
+
+a {
+    color: lightpink;
+    text-decoration: none;
+    font-weight: 200;
+    line-height: 25px;
+}

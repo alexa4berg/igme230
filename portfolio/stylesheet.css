@@ -53,11 +53,14 @@ h3 {
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     max-width: 90%;
 }
 
+footer p {
+    text-align: center;
+}
 
 /**************************************
 Header
@@ -196,6 +199,7 @@ Project Grid
     font-size: 0.85em;
     font-weight: 500;
     margin-top: 2px;
+    text-align: center;
 }
 
 /**************************************

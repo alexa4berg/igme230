@@ -1,7 +1,7 @@
-/* resume print friendly page css*/
+/* Resume print friendly page css*/
 
 
-/* this sets the page size for print, gives space along the for the priner*/
+/* Sets the page size for print, gives space along the for the priner*/
 
 @page {
     size: A4;
@@ -10,7 +10,7 @@
 }
 
 
-/*setting all base margins to zerso, setting defult font size, whenusing ems its necesarry, setting my sans-serif font defaults, does through list baised on the browsers capabilities */
+/*Setting all base margins to zero, setting defult font size */
 
 html {
     margin: 0;
@@ -19,14 +19,7 @@ html {
 }
 
 
-/* this is the div i have the drop down menu in so it doesnt go all the way to the right on the page, it stops at the right side of the resume*/
-
-.head {
-    max-width: 600px;
-}
-
-
-/* basic heading styles, have it floating left so my menu can be at the same level on the rigth */
+/* Basic heading styles */
 
 h1 {
     float: left;
@@ -39,7 +32,7 @@ h1 {
 }
 
 
-/* heading 2, titles for resume sections*/
+/* Heading 2, Titles for resume sections*/
 
 h2 {
     font-size: 16px;
@@ -48,7 +41,7 @@ h2 {
 }
 
 
-/* this is for the discription/subtitle under the title */
+/* Discription/subtitle under the title */
 
 h3 {
     float: left;
@@ -59,11 +52,12 @@ h3 {
     font-weight: 100;
     margin-left: 20px;
     width: 100%;
+
     /* it at 100% so the columns that are floating left dont overlap the heading*/
 }
 
 
-/* these are the columns i have the body text in, they float left so when the page gets too small they go into a single column  */
+/* Body text columns */
 
 .c {
     float: left;
@@ -74,7 +68,7 @@ h3 {
 }
 
 
-/* basic styles for paragrapgh*/
+/* Paragraph styles */
 
 p {
     font-size: 12px;
@@ -92,7 +86,7 @@ p {
     float: right;
     position: relative;
     display: inline-block;
-    color: lightpink;
+    color: #8175F7;
     margin: 10px;
     margin-right: 35px;
 }
@@ -120,7 +114,7 @@ p {
 /* link styles*/
 
 a {
-    color: lightpink;
+    color: white;
     text-decoration: none;
     font-weight: 200;
     line-height: 25px;

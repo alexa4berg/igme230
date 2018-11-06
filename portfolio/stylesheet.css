@@ -24,12 +24,17 @@ body {
 /* Sets the h1 styles */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
     color: #8175f7;
     text-align: center;
 }
 
+.mainh1{
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Sets the h2 styles */
 h2 {
     font-family: 'Playfair Display', serif;
@@ -186,6 +191,7 @@ Project Gallery Grid
 .project {
     width: 95vw;
     margin: 10px auto;
+    border-radius: 10px;
     /* Animation */
     transition: transform .2s;
 
@@ -277,7 +283,7 @@ Media Queries
     }
 
     h1 {
-        padding-top: 3em;
+        padding-top: 1em;
     }
 
     .header-container {

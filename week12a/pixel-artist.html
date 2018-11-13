@@ -115,6 +115,19 @@
         const cellSize = 25; // specify dimension of cell square in px
         const numCells = numCols * numRows; // calculate total number of cells
 
+        let constPixelGrid = document.querySelector("#pixelGrid");
+
+        pixelGrid.style.gridTemplateRows = `repeat(${numRows}, ${cellSize}px)`;
+        // create pixel grid rows
+        pixelGrid.style.gridTemplateColumns = `repeat(${numCols}, ${cellSize}px)`;
+        // create pixel grid cols
+
+        for (let cells = 0; cells < numCells; cells++) {
+            $("#pixelGrid").append('<span class="cell"></span>'); //add cells to grid
+        }
+
+        //look for class of cell as selector
+
     </script>
 </body>
 

@@ -134,9 +134,23 @@
             color = $(this).val();
             console.log(color);
         });
-        // Event handler that changes the color of a cell when it's clicked
-        $("span.cell").click(function() {
+        //        // Event handler that changes the color of a cell when it's clicked
+        //        $("span.cell").click(function() {
+        //            $(this).css("background-color", color);
+        //       });
+
+        // Mousedown event handler that changes the color of a cell when it's clicked and dragged
+        $("span.cell").mousedown(function() {
+            event.preventDefault(); // stop the default behavior of a mousedown
             $(this).css("background-color", color);
+            $("span.cell").mouseover(function() {
+                $(this).css("background-color", color);
+            });
+        });
+
+        // Unbind method for release of button
+        $(document).mouseup(function() {
+            $("span.cell").unbind("mouseover");
         });
 
     </script>

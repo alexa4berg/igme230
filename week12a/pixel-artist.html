@@ -110,23 +110,34 @@
         </div>
     </div>
     <script>
+        //look for class of cell as selector
+
         const numCols = 30; // specify pixel grid columns
         const numRows = 20; // specify pixel grid rows
         const cellSize = 25; // specify dimension of cell square in px
         const numCells = numCols * numRows; // calculate total number of cells
 
+        // Constant for the #pixelGrid div
         let constPixelGrid = document.querySelector("#pixelGrid");
-
-        pixelGrid.style.gridTemplateRows = `repeat(${numRows}, ${cellSize}px)`;
         // create pixel grid rows
-        pixelGrid.style.gridTemplateColumns = `repeat(${numCols}, ${cellSize}px)`;
+        pixelGrid.style.gridTemplateRows = `repeat(${numRows}, ${cellSize}px)`;
         // create pixel grid cols
-
+        pixelGrid.style.gridTemplateColumns = `repeat(${numCols}, ${cellSize}px)`;
+        // Creating cells and adding to the grid
         for (let cells = 0; cells < numCells; cells++) {
-            $("#pixelGrid").append('<span class="cell"></span>'); //add cells to grid
+            $("#pixelGrid").append('<span class="cell"></span>');
         }
-
-        //look for class of cell as selector
+        // Define a script-level variable
+        let color
+        // Event listener for the menu that changes the color value
+        $("#colorChooser").change(function() {
+            color = $(this).val();
+            console.log(color);
+        });
+        // Event handler that changes the color of a cell when it's clicked
+        $("span.cell").click(function() {
+            $(this).css("background-color", color);
+        });
 
     </script>
 </body>

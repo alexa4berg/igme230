@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 12b Interactivity Exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        #togglebar {
+            height: 25px;
+            width: 155px;
+            border: 2px solid #CD175C;
+            text-align: center;
+            position: fixed;
+            background-color: #71C4CA;
+            z-index: 3;
+            left: 30px;
+            top: 30px;
+        }
+        #menu {
+            height: 120px;
+            width: 155px;
+            position: fixed;
+            top: 25px;
+            background-color: #40AD85;
+            border: 1px solid white;
+            border-top: none;
+            top: 50px;
+            left: 30px;
+            z-index: 2;
+        }
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+        #img1 {
+            background-color: "#CD175C";
+        }
+        #img2 {
+            background-color: "#40AD85";
+        }
+        #img3 {
+            background-color: "#71C4CA";
+        }
+        img {
+            max-width: 70%;
+            max-height: 70%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="togglebar">Good Boi Menu</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#corgi1">Corgi1</a></li>
+                <li><a href="#corgi2">Corgi2</a></li>
+                <li><a href="#corgi3">Corgi3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper" id="corgi1">
+        <img src="https://img.huffingtonpost.com/asset/570eb7bb2200003600253713.jpeg?ops=scalefit_720_noupscale">
+    </div>
+    <div class="wrapper" id="corgi2">
+        <img src="http://i.imgur.com/Ow3wyYO.jpg">
+    </div>
+    <div class="wrapper" id="corgi3">
+        <img src="https://buzzsharer.com/wp-content/uploads/2015/12/sitting-corgis-winter-snow-forest.jpg">
+    </div>
+
+
+    <script>
+        $("a[href^='#']").click(function (event) {
+            event.preventDefault();
+            let target = $(this.hash);
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 500);
+        });
+        $("#togglebar").click(function () {
+            $("#menu").slideToggle("slow");
+        });
+    </script>
+</body>
+
+</html>

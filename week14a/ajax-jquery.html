@@ -77,11 +77,10 @@
 
     </div>
     <script>
-
-
+        'use strict';
         // we'll start with the default settings for the page. We can use the .load method to send an XML HTTP Request for a file and place it in a selected element.
 
-        let verse = ("verse3-4.txt") // sets default verse element
+        let verse = ("verse1-2.txt") // sets default verse element
         $("#verse-choose").val(verse); // changes menu option to default
         $("#selectedverse").load(verse); // retrieves only default element
 

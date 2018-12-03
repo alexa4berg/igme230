@@ -8,7 +8,7 @@ body,
 div,
 span,
 applet,
-object, 
+object,
 iframe,
 h1,
 h2,
@@ -134,8 +134,9 @@ table {
     border-spacing: 0;
 }
 
-
-/* My CSS Styles */
+/**************************************
+My Styles
+**************************************/
 
 
 html {
@@ -156,12 +157,54 @@ body {
 
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 10px;
+    align-items: center;
+
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.intro {
+    grid-column: 1/2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.introImage{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.logo img {
+    display: block;
+}
+
+nav {
+    margin: 1.5em 0 0 5%;
+}
+
+/* Uses an unordered list to create nav */
+.header ul li {
+    display: inline;
+    padding: 0 1.4em 0 0;
+    font-size: 0.9em;
+}
+
 .mainGrid {
     display: grid;
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
     grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-columns: 1fr 1fr;
 
 
 }
@@ -173,6 +216,15 @@ body {
     margin: 0 auto;
     grid-template-rows: repeat(3, 1fr);
     max-width: 960px;
+
+    grid-column: 1/3;
+    grid-row: 3;
+
+}
+
+footer {
+    grid-column: 1/3;
+    grid-row: 4;
 }
 
 .tile img {

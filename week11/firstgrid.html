@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DMV Form Redesign</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            background-color: green;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mygrid {
+            display: grid;
+            /* dont know what the vw is so cant do a pixel */
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+            height: 100%;
+            max-width: 1000px;
+
+        }
+
+        #mygrid div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #bada55;
+            border: 1px dotted black;
+        }
+
+        .headerbar {
+            grid-column: 1 / 4
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div id="mygrid">
+        <div class="headerbar">Cell 1</div>
+        <div>Cell 2</div>
+        <div>Cell 3</div>
+        <div>Cell 4</div>
+        <div>Cell 5</div>
+        <div>Cell 6</div>
+        <div>Cell 7</div>
+
+    </div>
+</body>
+
+</html>

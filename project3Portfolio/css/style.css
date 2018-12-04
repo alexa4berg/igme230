@@ -154,8 +154,20 @@ body {
     background: gray;
     display: flex;
     margin: 0;
-
 }
+
+.mainGrid {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/**************************************
+Header / Nav
+**************************************/
 
 .header {
     display: flex;
@@ -169,17 +181,6 @@ body {
 
     grid-column: 1/3;
     grid-row: 1;
-}
-
-.intro {
-    grid-column: 1/2;
-    grid-row: 2;
-    align-self: center;
-}
-
-.introImage {
-    grid-column: 2/3;
-    grid-row: 2;
 }
 
 .logo {
@@ -201,16 +202,25 @@ nav {
     font-size: 0.9em;
 }
 
-.mainGrid {
-    display: grid;
-    margin: 0 auto;
-    max-width: 1200px;
-    min-height: 100vh;
-    grid-template-rows: 100px .5fr 1fr 100px;
-    grid-template-columns: 1fr 1fr;
+/**************************************
+Intro
+**************************************/
 
-
+.intro {
+    grid-column: 1/2;
+    grid-row: 2;
+    align-self: center;
 }
+
+.introImage {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+
+/**************************************
+Gallery
+**************************************/
 
 .galleryGrid {
     display: grid;
@@ -223,11 +233,6 @@ nav {
     grid-column: 1/3;
     grid-row: 3;
 
-}
-
-footer {
-    grid-column: 1/3;
-    grid-row: 4;
 }
 
 .tile img {
@@ -253,6 +258,19 @@ footer {
 .tile:nth-child(4) {
     grid-column: span 3;
 }
+
+/**************************************
+Footer
+**************************************/
+
+footer {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+/**************************************
+Media Queries
+**************************************/
 
 @media screen and (max-width: 650px) {
     .galleryGrid {

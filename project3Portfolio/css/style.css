@@ -148,6 +148,7 @@ body {
 }
 
 /*Copyright (c) 2018 by Axel Valdez (https://codepen.io/axelvaldez/pen/wjrGdm)*/
+
 .wrapper {
     width: 100%;
     height: 100%;
@@ -175,7 +176,7 @@ Header / Nav
 
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-bottom: 1px solid #F2F2F2;
     padding: 10px;
     align-items: center;
@@ -225,6 +226,7 @@ Intro
 /**************************************
 Gallery
 **************************************/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
 
 .galleryGrid {
     display: grid;
@@ -248,7 +250,7 @@ Gallery
 
 }
 
-.project{
+.project {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -289,7 +291,37 @@ Media Queries
         display: block;
     }
 
-    .tile {
-        margin-bottom: 1rem;
+    .header {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 2.3em 0;
+        align-items: center;
     }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    .logo img {
+        display: block;
+    }
+
+    nav {
+        margin: 1.5em 0 0 5%;
+    }
+
+    .mainGrid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "introImage"
+            "intro"
+            "galleryGrid"
+            "footer";
+    }
+
 }

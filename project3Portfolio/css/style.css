@@ -163,6 +163,10 @@ body {
     min-height: 100vh;
     grid-template-rows: 100px .5fr 1fr 100px;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+        "intro introImage"
+        "galleryGrid galleryGrid"
+        "footer footer";
 }
 
 /**************************************
@@ -177,10 +181,9 @@ Header / Nav
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    background-color: aqua;
 
-
-    grid-column: 1/3;
-    grid-row: 1;
+    grid-area: header;
 }
 
 .logo {
@@ -207,14 +210,15 @@ Intro
 **************************************/
 
 .intro {
-    grid-column: 1/2;
-    grid-row: 2;
+    grid-area: intro;
     align-self: center;
+    background-color: purple;
 }
 
 .introImage {
-    grid-column: 2/3;
-    grid-row: 2;
+    grid-area: introImage;
+
+    background-color: blue;
 }
 
 
@@ -224,48 +228,56 @@ Gallery
 
 .galleryGrid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-columns: repeat(6, 1fr); */
     grid-gap: 1rem;
     margin: 0 auto;
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    grid-template-areas: "proj1 proj2"
+        "proj1  proj2"
+        "proj1 proj4"
+        "proj3 proj4"
+        "proj3 proj4";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 960px;
 
-    grid-column: 1/3;
-    grid-row: 3;
+    grid-area: galleryGrid;
+
+    background-color: darkgreen;
 
 }
 
-.tile img {
+.project{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.tile:nth-child(1) {
-    grid-column: span 3;
-    grid-row: span 2;
+.proj1 {
+    grid-area: proj1;
 }
 
-.tile:nth-child(2) {
-    grid-column: span 3;
+.proj2 {
+    grid-area: proj2;
 }
 
-.tile:nth-child(3) {
-    grid-column: span 3;
-    grid-row: span 2;
+.proj3 {
+    grid-area: proj3;
 }
 
-.tile:nth-child(4) {
-    grid-column: span 3;
+.proj4 {
+    grid-area: proj4;
 }
+
 
 /**************************************
 Footer
 **************************************/
 
 footer {
-    grid-column: 1/3;
-    grid-row: 4;
+    grid-area: footer;
+    background-color: yellow;
 }
 
 /**************************************

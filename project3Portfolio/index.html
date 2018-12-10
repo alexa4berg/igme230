@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Project 3 Portfolio Redo</title>
-
-
-
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        function checkedBox(cb) {
+           console.log("Click");
+        $("#menu").slideToggle("slow");
+        }
+    </script>
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +23,8 @@
 <body>
     <div class="wrapper">
         <div class="mainGrid">
+
+            <!-- DESKTOP FLEX MENU -->
             <header class="header">
                 <div class="logo">
                     <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="60" alt="Logo"></a>
@@ -30,29 +37,34 @@
                         <li><a title="Documentation" href="../portfolio/resume.html">Resume</a></li>
                     </ul>
                 </nav>
-                <!-- Top Navigation Menu -->
-                <div class="topnav">
-                    <a href="#home" class="active">Logo</a>
-                    <!-- Navigation links (hidden by default) -->
-                    <div id="myLinks">
-                       <a href="#news">Home</a>
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
+
+                <!-- HAMBURGER MENU -->
+                <div id="menuToggle">
+                    <input type="checkbox" onclick="checkedBox(this)" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#corgi1">Corgi1</a></li>
+                            <li><a href="#corgi2">Corgi2</a></li>
+                            <li><a href="#corgi3">Corgi3</a></li>
+                        </ul>
                     </div>
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
                 </div>
             </header>
 
-                <img class="introImage" src="/images/alexaprofilepic.jpg" alt="Alexa Forberg" title="Alexa Forberg">
 
+            <!-- INTRO IMAGE -->
+            <img class="introImage" src="/images/alexaprofilepic.jpg" alt="Alexa Forberg" title="Alexa Forberg">
+
+            <!-- INTRO -->
             <div class="intro">
                 <p>Hi, I'm Alexa <br> No, not the personal assistant, I'm a user experience designer and visual problem solver. I'm into interactivity, motion, human centered goodness, and having a camera in my hands once in a while.
                 </p>
             </div>
+
+            <!-- GALLERY -->
             <div class="galleryGrid">
                 <div class="proj1">
                     <img class="project" src="http://via.placeholder.com/800x600/EE4540/BE3733" alt="">
@@ -67,13 +79,23 @@
                     <img class="project" src="http://via.placeholder.com/800x600/530332/420228" alt="">
                 </div>
             </div>
+
+            <!-- FOOTER -->
             <footer class="footer">
-                <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="72" alt="Logo"></a>
+                <!-- <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="72" alt="Logo"></a> -->
                 <p>&copy; 2018 - Design/Code with &#10084; by Alexa Forberg</p>
             </footer>
         </div>
     </div>
+    <script>
+        // HAMBURGER MENU EVENT STUFF //
 
+        $("menuToggle").click(function() {
+            console.log("Click");
+            $("#menu").slideToggle("slow");
+        });
+
+    </script>
 </body>
 
 </html>

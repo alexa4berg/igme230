@@ -197,9 +197,7 @@ Header / Nav
     display: block;
 }
 
-nav {
-    margin: 1.5em 0 0 5%;
-}
+
 
 .header nav ul li {
     display: inline;
@@ -283,6 +281,68 @@ Gallery
     grid-area: proj4;
 }
 
+/**************************************
+RESUME
+**************************************/
+.mainGridresume {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+        "intro introImage"
+        "resumeContain resumeContain"
+        "footer footer";
+}
+
+.resumeContainer{
+    grid-area: resumeContain;
+}
+
+/* Resume Styling */
+
+.jobTitle{
+	color: #FF2CE8;
+	margin-bottom: 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.jobHead{
+	color: black;
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.jobSubHead{
+	color: black;
+	opacity: .75;
+	margin-bottom: 12px;
+	font-size: 20px;
+}
+.jobPara{
+	color: black;
+	opacity: .5;
+	margin-bottom: 25px;
+	font-size: 20px;
+	width: 50%;
+}
+
+
+.resumeContainer{
+	justify-content: center;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+}
+.columnLeft{
+	width: 800px;
+}
+.columnRight{
+	width: 460px;
+}
+
 
 /**************************************
 Footer
@@ -296,6 +356,27 @@ footer {
 /**************************************
 Media Queries
 **************************************/
+/* Media Queries */
+/* Printing */
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+
+	.icon-nav{
+		display: none;
+	}
+	.pageTitle{
+		display: none;
+	}
+	.resumeDownload{
+		display: none;
+	}
+	.jobPara{
+		width: 60%;
+	}
+}
 
 @media screen and (max-width: 650px) {
     .galleryGrid {
@@ -340,6 +421,50 @@ Media Queries
             "galleryGrid"
             "footer";
     }
+
+     .mainGridresume {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "introImage"
+            "intro"
+            "resumeContain"
+            "footer";
+    }
+
+
+
+
+
+
+
+    .resumeContainer{
+		flex-direction: column !important;
+        display:block;
+	}
+
+	.resumeQueryMargin{
+		margin-top: 50px;
+	}
+
+	.jobTitle{
+		font-size: 24px;
+	}
+	.jobHead{
+		font-size: 20px;
+		width: 300px;
+	}
+	.jobSubHead{
+		font-size: 20px;
+	}
+	.jobPara{
+		font-size: 20px;
+	}
+
+
 
 
     /**************************************

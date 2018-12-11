@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project 3 Portfolio Redo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mainGridresume">
+
+            <!-- DESKTOP FLEX MENU -->
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html" title="Alexa Logo"><img src="./images/alexalogo.png" width="60" alt="Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="Work" title="Work" href="../portfolio/index.html">Work</a></li>
+                        <li><a title="Contact" href="../portfolio/conatct.html">Contact</a></li>
+                        <li><a title="Documentation" href="../portfolio/documentation.html">Documentation</a></li>
+                        <li><a title="Documentation" href="../portfolio/resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+
+                <!-- HAMBURGER MENU -->
+                <div class="hamburgerNav">
+                    <div class="mobileLogo">
+                        <a href="index.html" title="Alexa Logo"><img src="./images/alexalogo.png" width="60" alt="Logo"></a>
+                    </div>
+                    <div id="menuToggle">
+                        <input type="checkbox" onclick="checkedBox(this)" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div id="menu">
+                            <ul>
+                                <li class="mobileList"><a href="#corgi1">Corgi1</a></li>
+                                <li class="mobileList"><a href="#corgi2">Corgi2</a></li>
+                                <li class="mobileList"><a href="#corgi3">Corgi3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- INTRO IMAGE -->
+
+
+            <!-- INTRO -->
+            <div class="intro">
+                <h1>Hi, I'm Alexa </h1><br><p>No, not the personal assistant, I'm a user experience designer and visual problem solver. I'm into interactivity, motion, human centered goodness, and having a camera in my hands once in a while.
+                </p>
+            </div>
+
+            <!-- GALLERY -->
+            <div class="resumeContainer">
+                <div class="columnLeft">
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Experience
+                    </div>
+                    <div class="jobHead">
+                        Shore Power Inc. - Design and Marketing Intern
+                    </div>
+                    <div class="jobSubHead">
+                        May 2018 - Now
+                    </div>
+                    <div class="jobPara">
+                        Worked on product inserts, website assets, and various
+                        digital/print pieces. Used google analytics for market reasearch
+                        and attended weekly meetings.
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobHead">
+                        Thought At Work - Designer/Developer
+                    </div>
+                    <div class="jobSubHead">
+                        February 2017 - Now
+                    </div>
+                    <div class="jobPara">
+                        Working with a team do develop design collateral for RIT’s
+                        Thought At Work Design Conference as well as developed pages
+                        and interations for the cenerences site.
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobHead">
+                        New Media Club - Webmaster
+                    </div>
+                    <div class="jobSubHead">
+                        February 2018 - Now
+                    </div>
+                    <div class="jobPara">
+                        Created product packaging, website assets, flyers and product
+                        promotion cards as well as planned different marketing strategies
+                        for mail, social media, and site promotions
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Relevant Courses
+                    </div>
+                    <div class="jobHead">
+                        NMD Animation
+                    </div>
+                    <div class="jobPara">
+                        Integrated various animation principles and techniques in adobe
+                        after effects. As well I taught myself more advanced topics of
+                        motion graphics including expression scripting and the integration
+                        of cinema 4d and after effects.
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobHead">
+                        NMD Interactive II
+                    </div>
+                    <div class="jobPara">
+                        Employed the laws of user interaction design to create efficient,
+                        enjoyable, and usable interfaces through multiple deliverables and
+                        user flow diagrams.
+                    </div>
+                    <!--  section -->
+                </div>
+                <div class="columnRight resumeQueryMargin">
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Education
+                    </div>
+                    <div class="jobHead">
+                        Rochester Institute of Technology
+                    </div>
+                    <div class="jobSubHead">
+                        Expected Graduation Spring 2020
+                    </div>
+                    <div class="jobPara">
+                        <strong>Major:</strong> New Media Design
+                        <strong>Immersion:</strong> Communication
+                        <strong>GPA:</strong> 3.46
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Skills
+                    </div>
+                    <div class="jobPara">
+                        Visual Design - Experience Design
+                    </div>
+                    <div class="jobPara">
+                        Communication - Marketing
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Software
+                    </div>
+                    <div class="jobPara">
+                        Adobe Suite - Cinema 4D
+                    </div>
+                    <div class="jobPara">
+                        Sketch - Invision
+                    </div>
+                    <div class="jobPara">
+                        Git - IDE (Atom,IntelliJ)
+                    </div>
+                    <div class="jobPara">
+                        Figma
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Programming
+                    </div>
+                    <div class="jobPara">
+                        Javascript - CSS
+                    </div>
+                    <div class="jobPara">
+                        SCSS
+                    </div>
+                    <!--  section -->
+                    <!--  section -->
+                    <div class="jobTitle">
+                        Hands On
+                    </div>
+                    <div class="jobPara">
+                        Photography - Metal/Plastics
+                    </div>
+                    <div class="jobPara">
+                        Woodworking - Electronics
+                    </div>
+                    <!--  section -->
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <!-- <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="72" alt="Logo"></a> -->
+                <p>&copy; 2018 - Design/Code with &#10084; by Alexa Forberg</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
+</body>
+
+</html>

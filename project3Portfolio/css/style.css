@@ -6,7 +6,7 @@ CSS Reset
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* Flexbox Ref: https://internetingishard.com/html-and-css/flexbox/ */
 html,
 body,
 div,
@@ -423,7 +423,7 @@ Hamburger Menu
     #menu {
         height: 120px;
         width: 155px;
-        position: fixed;
+        position: relative;
         top: 50px;
         background-color: #40AD85;
         border: 1px solid white;

@@ -201,7 +201,7 @@ nav {
     margin: 1.5em 0 0 5%;
 }
 
-.header ul li {
+.header nav ul li {
     display: inline;
     padding: 0 1.4em 0 0;
     font-size: 0.9em;
@@ -212,7 +212,7 @@ nav {
     display: none;
 }
 
-.mobileLogo{
+.mobileLogo {
     display: none;
 }
 
@@ -311,12 +311,12 @@ Media Queries
         align-items: center;
     }
 
-    .header nav{
+    .header nav {
         display: none;
     }
 
     .logo {
-        display:none;
+        display: none;
         /* margin-left: 5%; */
     }
 
@@ -342,11 +342,11 @@ Media Queries
     }
 
 
-/**************************************
+    /**************************************
 Hamburger Menu
 **************************************/
 
-/* https://codepen.io/erikterwan/pen/EVzeRP */
+    /* https://codepen.io/erikterwan/pen/EVzeRP */
 
     #menuToggle {
         display: block;
@@ -355,7 +355,7 @@ Hamburger Menu
         right: 3vw;
         z-index: 1;
         -webkit-user-select: none;
-          user-select: none;
+        user-select: none;
 
     }
 
@@ -369,7 +369,7 @@ Hamburger Menu
         cursor: pointer;
         opacity: 0;
         z-index: 2;
-       /* -webkit-touch-callout: none; */
+        /* -webkit-touch-callout: none; */
     }
 
     #menuToggle span {
@@ -417,7 +417,7 @@ Hamburger Menu
         width: 155px;
         border: 2px solid #CD175C;
         text-align: center;
-        position: fixed;
+        /*position: fixed; */
         background-color: #71C4CA;
         z-index: 3;
         left: 30px;
@@ -425,8 +425,8 @@ Hamburger Menu
     }
 
     #menu {
-        height: 120px;
-        width: 155px;
+        height: 30vh;
+        width: 35vw;
         position: relative;
         top: 50px;
         background-color: #40AD85;
@@ -438,9 +438,17 @@ Hamburger Menu
         display: none;
     }
 
-  .mobileLogo{
-    display: block;
-}
+    .mobileLogo {
+        display: block;
+    }
 
+    .header {
+        padding: 15px;
+    }
 
+    .mobileList{
+        display: block;
+        padding:0;
+        padding-top:25px;
+    }
 }

@@ -167,7 +167,7 @@ body {
     grid-template-rows: 100px .5fr 1fr 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
-        "intro introImage"
+        "introImage intro"
         "galleryGrid galleryGrid"
         "footer footer";
 }
@@ -222,18 +222,34 @@ Intro
     grid-area: intro;
     align-self: center;
     background-color: purple;
+    padding: 5px;
 }
 
 .introImage {
     grid-area: introImage;
     background-color: blue;
-    border-radius: 50%;
+   /* border-radius: 50%; */
     width: 50%;
     margin: 20px auto;
     align-self: center;
     justify-self: center;
 }
 
+.ctabutton {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 114px;
+    height: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #3D3D3D;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
 /**************************************
 Gallery
 **************************************/
@@ -297,50 +313,55 @@ RESUME
         "footer footer";
 }
 
-.resumeContainer{
+.resumeContainer {
     grid-area: resumeContain;
 }
 
 /* Resume Styling */
 
-.jobTitle{
-	color: #FF2CE8;
-	margin-bottom: 16px;
-	font-size: 24px;
-	font-weight: bold;
+.jobTitle {
+    color: #FF2CE8;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
 }
-.jobHead{
-	color: black;
-	margin-bottom: 8px;
-	font-size: 20px;
-	font-weight: bold;
+
+.jobHead {
+    color: black;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.jobSubHead{
-	color: black;
-	opacity: .75;
-	margin-bottom: 12px;
-	font-size: 20px;
+
+.jobSubHead {
+    color: black;
+    opacity: .75;
+    margin-bottom: 12px;
+    font-size: 20px;
 }
-.jobPara{
-	color: black;
-	opacity: .5;
-	margin-bottom: 25px;
-	font-size: 20px;
-	width: 50%;
+
+.jobPara {
+    color: black;
+    opacity: .5;
+    margin-bottom: 25px;
+    font-size: 20px;
+    width: 50%;
 }
 
 
-.resumeContainer{
-	justify-content: center;
-	margin-top: 100px;
-	display: flex;
-	flex-direction: row;
+.resumeContainer {
+    justify-content: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
 }
-.columnLeft{
-	width: 800px;
+
+.columnLeft {
+    width: 800px;
 }
-.columnRight{
-	width: 460px;
+
+.columnRight {
+    width: 460px;
 }
 
 
@@ -359,23 +380,27 @@ Media Queries
 /* Media Queries */
 /* Printing */
 @page {
-  size: A4;
-  margin: 0;
+    size: A4;
+    margin: 0;
 }
+
 @media print {
 
-	.icon-nav{
-		display: none;
-	}
-	.pageTitle{
-		display: none;
-	}
-	.resumeDownload{
-		display: none;
-	}
-	.jobPara{
-		width: 60%;
-	}
+    .icon-nav {
+        display: none;
+    }
+
+    .pageTitle {
+        display: none;
+    }
+
+    .resumeDownload {
+        display: none;
+    }
+
+    .jobPara {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -422,7 +447,7 @@ Media Queries
             "footer";
     }
 
-     .mainGridresume {
+    .mainGridresume {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: 1fr;
@@ -441,28 +466,31 @@ Media Queries
 
 
 
-    .resumeContainer{
-		flex-direction: column !important;
-        display:block;
-	}
+    .resumeContainer {
+        flex-direction: column !important;
+        display: block;
+    }
 
-	.resumeQueryMargin{
-		margin-top: 50px;
-	}
+    .resumeQueryMargin {
+        margin-top: 50px;
+    }
 
-	.jobTitle{
-		font-size: 24px;
-	}
-	.jobHead{
-		font-size: 20px;
-		width: 300px;
-	}
-	.jobSubHead{
-		font-size: 20px;
-	}
-	.jobPara{
-		font-size: 20px;
-	}
+    .jobTitle {
+        font-size: 24px;
+    }
+
+    .jobHead {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .jobSubHead {
+        font-size: 20px;
+    }
+
+    .jobPara {
+        font-size: 20px;
+    }
 
 
 
@@ -571,9 +599,9 @@ Hamburger Menu
         padding: 15px;
     }
 
-    .mobileList{
+    .mobileList {
         display: block;
-        padding:0;
-        padding-top:25px;
+        padding: 0;
+        padding-top: 25px;
     }
 }

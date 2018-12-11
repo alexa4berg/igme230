@@ -212,6 +212,10 @@ nav {
     display: none;
 }
 
+.mobileLogo{
+    display: none;
+}
+
 /**************************************
 Intro
 **************************************/
@@ -434,6 +438,9 @@ Hamburger Menu
         display: none;
     }
 
+  .mobileLogo{
+    display: block;
+}
 
 
 }

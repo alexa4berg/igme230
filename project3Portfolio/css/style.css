@@ -172,134 +172,21 @@ body {
         "footer footer";
 }
 
-/**************************************
-Header / Nav
-**************************************/
-
-.header {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 10px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: aqua;
-
-    grid-area: header;
-}
-
-.logo {
-    margin-left: 5%;
-}
-
-.logo img {
-    display: block;
-}
-
-
-
-.header nav ul li {
-    display: inline;
-    padding: 0 1.4em 0 0;
-    font-size: 0.9em;
-}
-
-/* DO NOT DISPLAY HAMBURGER MENU WHEN NOT MOBILE*/
-#menuToggle {
-    display: none;
-}
-
-.mobileLogo {
-    display: none;
-}
-
-/**************************************
-Intro
-**************************************/
-
-.intro {
-    grid-area: intro;
-    align-self: center;
-    background-color: purple;
-    padding: 5px;
-}
-
-.introImage {
-    grid-area: introImage;
-    background-color: blue;
-   /* border-radius: 50%; */
-    width: 50%;
-    margin: 20px auto;
-    align-self: center;
-    justify-self: center;
-}
-
-.ctabutton {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 114px;
-    height: 10px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    background: #3D3D3D;
-    font-size: 14px;
-    border-radius: 10px;
-    margin-bottom: 70px;
-}
-/**************************************
-Gallery
-**************************************/
-
-/* References */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
-/* https://axelvaldez.mx/blog/2018/05/mosaic-layout-with-css-grid/ */
-/* https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
-
-.galleryGrid {
+/* PROJECT PAGE GRID */
+.mainProjectGrid {
     display: grid;
-    grid-gap: 1rem;
     margin: 0 auto;
-    grid-template-areas: "proj1 proj2"
-        "proj1  proj2"
-        "proj1 proj4"
-        "proj3 proj4"
-        "proj3 proj4";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-rows: 100px .5fr 1fr 100px;
     grid-template-columns: 1fr 1fr;
-    max-width: 960px;
-    grid-area: galleryGrid;
-    background-color: darkgreen;
+    grid-template-areas: "header header"
+        "introImage intro"
+        "content content"
+        "footer footer";
 }
 
-.project {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.proj1 {
-    grid-area: proj1;
-}
-
-.proj2 {
-    grid-area: proj2;
-}
-
-.proj3 {
-    grid-area: proj3;
-}
-
-.proj4 {
-    grid-area: proj4;
-}
-
-/**************************************
-RESUME
-**************************************/
+/* RESUME */
 .mainGridresume {
     display: grid;
     margin: 0 auto;
@@ -364,6 +251,190 @@ RESUME
     width: 460px;
 }
 
+/**************************************
+Header / Nav
+**************************************/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aqua;
+
+    grid-area: header;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.logo img {
+    display: block;
+}
+
+
+
+.header nav ul li {
+    display: inline;
+    padding: 0 1.4em 0 0;
+    font-size: 0.9em;
+}
+
+/* DO NOT DISPLAY HAMBURGER MENU WHEN NOT MOBILE*/
+#menuToggle {
+    display: none;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+/**************************************
+PROJECT 1 PAGE
+**************************************/
+
+
+
+.introProjectImage {
+    grid-area: introImage;
+    background-color: blue;
+
+    width: 90%;
+    margin: 20px auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.projectContent {
+    grid-area: content;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.singleProjectImageCont {
+    grid-area: content;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.singleProjectImage {
+    width: 80vw;
+}
+
+
+.introProject {
+    grid-area: intro;
+    align-self: center;
+    background-color: purple;
+    padding: 50px;
+}
+
+.ctabutton {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 114px;
+    height: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #3D3D3D;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+
+/**************************************
+Intro
+**************************************/
+
+.intro {
+    grid-area: intro;
+    align-self: center;
+    background-color: purple;
+    padding: 5px;
+}
+
+.introImage {
+    grid-area: introImage;
+    background-color: blue;
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.ctabutton {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 114px;
+    height: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #3D3D3D;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+/**************************************
+Gallery
+**************************************/
+
+/* References */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+/* https://axelvaldez.mx/blog/2018/05/mosaic-layout-with-css-grid/ */
+/* https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
+
+.galleryGrid {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    grid-template-areas: "proj1 proj2"
+        "proj1  proj2"
+        "proj1 proj4"
+        "proj3 proj4"
+        "proj3 proj4";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 960px;
+    grid-area: galleryGrid;
+    background-color: darkgreen;
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.proj1 {
+    grid-area: proj1;
+}
+
+.proj2 {
+    grid-area: proj2;
+}
+
+.proj3 {
+    grid-area: proj3;
+}
+
+.proj4 {
+    grid-area: proj4;
+}
+
+
 
 /**************************************
 Footer
@@ -378,6 +449,7 @@ footer {
 Media Queries
 **************************************/
 /* Media Queries */
+
 /* Printing */
 @page {
     size: A4;
@@ -434,6 +506,9 @@ Media Queries
         margin: 1.5em 0 0 5%;
     }
 
+
+    /* MAIN GRIDS TO COLUMN */
+
     .mainGrid {
         display: grid;
         grid-gap: 20px;
@@ -460,11 +535,21 @@ Media Queries
             "footer";
     }
 
+    .mainProjectGrid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "introImage"
+            "intro"
+            "content"
+            "footer";
+    }
 
 
-
-
-
+    /* RESUME RESPONSIVE STYLING */
 
     .resumeContainer {
         flex-direction: column !important;
@@ -604,4 +689,8 @@ Hamburger Menu
         padding: 0;
         padding-top: 25px;
     }
+}
+
+@media screen and (max-width: 650px) {
+
 }

@@ -222,7 +222,7 @@ h1 {
 /* Resume Styling */
 
 .jobTitle {
-    color: #FF2CE8;
+    color: #8175f7;
     margin-bottom: 16px;
     font-size: 24px;
     font-weight: bold;
@@ -253,7 +253,7 @@ h1 {
 
 .resumeContainer {
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
 }

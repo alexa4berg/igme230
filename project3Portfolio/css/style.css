@@ -148,13 +148,27 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background: white;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+
+    background: -webkit-linear-gradient(#c2bcff,  #8175f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .wrapper {
     width: 100%;
     height: 100%;
-    background: gray;
+    background: white;
     display: flex;
     margin: 0;
 }
@@ -164,7 +178,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
-    grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-rows: 100px .5fr 1fr 75px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
         "introImage intro"
@@ -178,7 +192,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
-    grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-rows: 100px .5fr 1fr 75px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
         "introImage intro"
@@ -192,7 +206,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
-    grid-template-rows: 100px .5fr 1fr 100px;
+    grid-template-rows: 100px .5fr 1fr 75px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
         "intro introImage"
@@ -258,12 +272,12 @@ Header / Nav
 .header {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 2px solid #e0e0e0 ;
     padding: 10px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-color: aqua;
+
 
     grid-area: header;
 }
@@ -291,6 +305,19 @@ Header / Nav
 
 .mobileLogo {
     display: none;
+}
+
+/* Sets styles for navigation when hover is not active */
+header ul li a {
+    text-decoration: none;
+    color: #7D7C7D;
+}
+
+/* On hover the options turn purple with a thin line below */
+nav ul li a:hover {
+    color: #8175f7;
+    border-bottom: 2px solid #8175f7;
+    font-weight: 300;
 }
 
 /**************************************
@@ -368,7 +395,6 @@ Intro
 .intro {
     grid-area: intro;
     align-self: center;
-    background-color: purple;
     padding: 5px;
 }
 
@@ -420,13 +446,14 @@ Gallery
     grid-template-columns: 1fr 1fr;
     max-width: 960px;
     grid-area: galleryGrid;
-    background-color: darkgreen;
+
 }
 
 .project {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 25px;
 }
 
 .proj1 {
@@ -453,8 +480,13 @@ Footer
 
 footer {
     grid-area: footer;
-    background-color: yellow;
+     padding: 2em;
+    text-align: center;
+    max-width: 2000px;
+
 }
+
+
 
 /**************************************
 Media Queries
@@ -627,7 +659,7 @@ Hamburger Menu
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: black;
+        background: #7D7C7D;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -648,7 +680,7 @@ Hamburger Menu
     #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
+        background: #7D7C7D;
 
     }
 
@@ -664,27 +696,28 @@ Hamburger Menu
     #menuToggle {
         height: 25px;
         width: 155px;
-        border: 2px solid #CD175C;
+
         text-align: center;
         /*position: fixed; */
-        background-color: #71C4CA;
+
         z-index: 3;
         left: 30px;
         top: 30px;
     }
 
     #menu {
-        height: 30vh;
-        width: 35vw;
-        position: relative;
+        height: 225px;
+        width: 200px;
+
         top: 50px;
-        background-color: #40AD85;
+        background-color: #fff;
         border: 1px solid white;
         border-top: none;
         /*top: 50px;*/
         left: 30px;
         z-index: 2;
         display: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .mobileLogo {

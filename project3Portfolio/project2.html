@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Project 3 Portfolio Redo</title>
+    <title>Project 2 - DMV Redesign</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +18,8 @@
 
 <body>
     <div class="wrapper">
-        <div class="mainGrid">
+
+        <div class="mainProjectGrid">
 
             <!-- DESKTOP FLEX MENU -->
             <header class="header">
@@ -56,39 +57,55 @@
                 </div>
             </header>
 
-
             <!-- INTRO IMAGE -->
-            <img class="introImage" src="./images/alexaprofilepic.jpg" alt="Alexa Forberg" title="Alexa Forberg">
+            <img class="introProjectImage" src="./images/DiabetiesIntro.jpg" alt="Alexa Forberg" title="Alexa Forberg">
 
             <!-- INTRO -->
-            <div class="intro">
-                <h1 class="mainAlexa">Hi, I'm Alexa</h1> <br>
-                <p>No, not the personal assistant, I'm a user experience designer and visual
-                    problem solver. I'm into interactivity, motion,
-                    human centered goodness, and having a camera in my hands once in a while.
+            <div class="introProject">
+                <h1>Supply Management for Diabetics</h1><br>
+                <p>I’m designing a personal life
+                    management system to solve lack
+                    of physical organization for
+                    diabetics
+                    <br>
+                    <a href="https://drive.google.com/file/d/1MV7k6xus5HsgQ10sGIrXuQ-dfpawHiy3/view">
+                        <div class="ctabutton">
+                            <p>View Deck</p>
+                        </div>
+                    </a>
                 </p>
             </div>
 
-            <!-- GALLERY -->
-            <div class="galleryGrid">
-                <div class="proj1" data-aos="zoom-in" data-aos-once="true">
-                    <a href="./project1.html">
-                        <img class="project" src="./images/DiabetiesManagementGalleryTest.jpg" alt="Diabeties Supply Management"> </a>
+            <!-- MAIN CONTENT -->
+            <div class="projectContent">
+                <div class="someContent">
+                    <div class="projectSection">
+                        <h2>Overview</h2>
+                    </div><br>
+                    <p>Having diabetes means having a lot of supplies and information to keep track of.<br> <br>
+
+                        From insulin, pods and meters, to syringes, test strips and snacks for low blood sugar, there is a lot you can’t risk mismanaging when it’s your health at stake<br> <br>
+
+                        I’m aiming to create a management system for diabetics that goes beyond viewing data and inputing numbers.<br> <br>
+
+                        Creating an experience that helps a user better organize the physical aspects of their diabetic lifestyle and provide valuable assurance</p> <br>
                 </div>
-                <div class="proj2" data-aos="zoom-in" data-aos-once="true">
-                    <a href="./project2.html"><img class="project" src="./images/DMVGallery.jpg" alt="DMV Redesign"></a>
+                <div class="projectSection">
+                    <h2>Project Highlights</h2>
+                </div><br>
+                <div class="singleProjectImageCont">
+                    <img class="singleProjectImage" src="./images/DiabetiesOnboarding1.jpg" alt="Alexa Forberg" title="Alexa Forberg">
                 </div>
-                <div class="proj3" data-aos="zoom-in" data-aos-once="true">
-                    <img class="project" src="./images/PaulRandGallery.jpg" alt="">
+                <div class="singleProjectImageCont">
+                    <img class="singleProjectImage" src="./images/SuppliesPhoto.jpg" alt="Alexa Forberg" title="Alexa Forberg">
                 </div>
-                <div class="proj4" data-aos="zoom-in" data-aos-once="true">
-                    <img class="project" src="./images/BOAGallery.jpg" alt="">
+                <div class="singleProjectImageCont">
+                    <img class="singleProjectImage" src="./images/DesktopNotification.jpg" alt="Alexa Forberg" title="Alexa Forberg">
                 </div>
             </div>
 
             <!-- FOOTER -->
             <footer class="footer">
-                <!-- <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="72" alt="Logo"></a> -->
                 <p>&copy; 2018 - Design/Code with &#10084; by Alexa Forberg</p>
             </footer>
         </div>
@@ -98,7 +115,6 @@
         AOS.init({
             duration: 1200,
         })
-
     </script>
 </body>
 

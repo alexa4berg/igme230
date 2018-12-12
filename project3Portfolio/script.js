@@ -1,6 +1,5 @@
- // HAMBURGER MENU EVENT STUFF //
- // http://michalsnik.github.io/aos/
- // https://stackoverflow.com/questions/45425275/stop-scrolling-effect-happening-when-going-up
+ // HAMBURGER MENU EVENT STUFF - Triggers the expansion of the menu using a click checker //
+
 "use strict";
 
  function checkedBox(cb) {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i Playfair+Display:400,700,900" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mainGrid">
+
+            <!-- DESKTOP FLEX MENU -->
+            <header class="header">
+                <div class="logo">
+                    <a href="./index.html" title="Alexa Logo"><img src="./images/alexalogo.png" width="60" alt="Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="Work" title="Work" href="./index.html">Work</a></li>
+                        <li><a title="Contact" href="./contact.html">Contact</a></li>
+                        <li><a title="Documentation" href="./documentation.html">Documentation</a></li>
+                        <li><a title="Resume" href="./resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+
+                <!-- HAMBURGER MENU -->
+                <div class="hamburgerNav">
+                    <div class="mobileLogo">
+                        <a href="index.html" title="Alexa Logo"><img src="./images/alexalogo.png" width="60" alt="Logo"></a>
+                    </div>
+                    <div id="menuToggle">
+                        <input type="checkbox" onclick="checkedBox(this)" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div id="menu">
+                            <ul>
+                                <li class="mobileList"><a href="./index.html">Work</a></li>
+                                <li class="mobileList"><a href="./contact.html">Contact</a></li>
+                                <li class="mobileList"><a href="./documentation.html">Documentation</a></li>
+                                <li class="mobileList"><a href="./resume.html">Resume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- INTRO IMAGE -->
+            <img class="introImage" src="./images/alexaprofilepic.jpg" alt="Alexa Forberg" title="Alexa Forberg">
+
+            <!-- INTRO -->
+            <div class="intro">
+                <h1 class="mainAlexa">Hey, what's up</h1> <br>
+                <p>Feel free to drop me a line to talk about design, doggos..or both.
+                    <br><br>
+                    <p>You can find me on Twitter @alexa4berg</p>
+                    <p>Respectfully call me at 631-512-3124</p>
+                    <p>Slide into my inbox at alexa4berg@gmail.com
+                    </p>
+            </div>
+
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <!-- <a href="index.html" title="Alexa Logo"><img src="/images/alexalogo.png" width="72" alt="Logo"></a> -->
+                <p>&copy; 2018 - Design/Code with &#10084; by Alexa Forberg</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
+</body>
+
+</html>

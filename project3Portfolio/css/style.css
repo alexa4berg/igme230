@@ -159,10 +159,16 @@ h1 {
     font-size: 2.5em;
     font-weight: 700;
 
-    background: -webkit-linear-gradient(#c2bcff,  #8175f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#c2bcff, #8175f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .wrapper {
@@ -273,7 +279,7 @@ Header / Nav
 .header {
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #e0e0e0 ;
+    border-bottom: 2px solid #e0e0e0;
     padding: 10px;
     align-items: center;
     flex-direction: row;
@@ -329,7 +335,7 @@ PROJECT 1 PAGE
 
 .introProjectImage {
     grid-area: introImage;
-    background-color: blue;
+
 
     width: 90%;
     margin: 20px auto;
@@ -340,20 +346,20 @@ PROJECT 1 PAGE
 .projectContent {
     grid-area: content;
     justify-content: center;
-    background-color: blue;
-    max-width:100vw;
-    margin:0 auto;
+
+    max-width: 100vw;
+    margin: 0 auto;
 }
 
-.someContent{
+.someContent {
     max-width: 90vw;
-    text-align:center;
-    word-wrap:break-word;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .singleProjectImageCont {
     grid-area: content;
-    background-color: yellowgreen;
+
     margin: 0 auto;
 }
 
@@ -361,14 +367,14 @@ PROJECT 1 PAGE
 .singleProjectImage {
     width: 60vw;
     margin: 0 auto;
-    display:block;
+    display: block;
 }
 
 
 .introProject {
     grid-area: intro;
     align-self: center;
-    background-color: purple;
+
     padding: 50px;
 }
 
@@ -382,12 +388,15 @@ PROJECT 1 PAGE
     height: 10px;
     padding-top: 18px;
     padding-bottom: 18px;
-    background: #3D3D3D;
+    background: #f2f2f2;
     font-size: 14px;
     border-radius: 10px;
     margin-bottom: 70px;
 }
 
+.projectSection{
+    background-color:
+}
 
 /**************************************
 Intro
@@ -419,10 +428,11 @@ Intro
     height: 10px;
     padding-top: 18px;
     padding-bottom: 18px;
-    background: #3D3D3D;
+    background: #7D7C7D;
     font-size: 14px;
     border-radius: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 /**************************************
@@ -455,7 +465,7 @@ Gallery
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
-     transition: transform .2s;
+    transition: transform .2s;
 }
 
 .proj1 {
@@ -489,7 +499,7 @@ Footer
 
 footer {
     grid-area: footer;
-     padding: 2em;
+    padding: 2em;
     text-align: center;
     max-width: 2000px;
 
@@ -559,7 +569,7 @@ Media Queries
     }
 
     .project:hover {
-    transform: scale(1.01);
+        transform: scale(1.01);
     }
 
 
@@ -748,6 +758,4 @@ Hamburger Menu
     }
 }
 
-@media screen and (max-width: 650px) {
-
-}
+@media screen and (max-width: 650px) {}

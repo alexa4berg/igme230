@@ -39,11 +39,105 @@ aside {
 Your Formatting
 ***************/
 
-#wrapper {
-    width: 90vw;
-    max-width: 1200px;
-    min-height: 100vh;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+/*menu titles*/
+
+.menuitem {
+    background-color: white;
+    margin: 0;
+    border: solid 1px #b5e7a0;
+}
+
+
+/*menu options*/
+
+.submenu {
+    /*hide when page is loaded*/
+    display: none;
+    /*no bullets*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*options in the menus*/
+li {
+    background-color: gainsboro;
+    padding-left: .25rem;
+}
+
+
+header,
+footer {
+    /* centers header and footer content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86af49;
+}
+
+nav,
+aside {
     border: 1px dotted black;
+}
+
+
+
+/*****************
+Grid Formatting
+*****************/
+
+
+/*mobile*/
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header""sidenav""article""sidebar""footer";
+    grid-template-rows: 4rem 2fr 10fr 2fr 3rem;
+}
+
+header {
+    grid-area: header;
+    height: 4rem;
+}
+
+nav {
+    grid-area: sidenav;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+    height: 3rem;
+}
+
+
+
+/* desktop*/
+
+@media screen and (min-width: 760px) {
+    #wrapper {
+        grid-template-areas: "header header header"
+            /*  */
+            "sidebar article sidenav"
+            /*  */
+            "footer footer footer ";
+        /* */
+        grid-template-rows: 1fr 10fr 1fr;
+        /*  */
+        grid-template-columns: 33vw 33vw 200px;
+        /*  */
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100vh;
+    }
 }

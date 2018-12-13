@@ -103,7 +103,8 @@
 
 
     <script>
-        $("a[href^='#']").click(function (event) {
+        // Handles the animation to the part of the page
+        $("a[href^='#']").click(function (event) { // if
             event.preventDefault();
             let target = $(this.hash);
             $('html, body').animate({

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="holygrail-grid.css">
     <style>
         #navpanel {
+            display:none; /* doesnt show when loaded */
             background-color: pink;
             width: 200px;
             height: 200px;
@@ -30,7 +31,7 @@
     <script>
         /* $ means I'm using the libarary now, it should be handled by that syntax. Then what it should be looking at to do things. Selector implies you want it to affect everything in that array (doc query all). When click on hide button run a function. Noting passed into it. Run this fucntion that when ___ is clicked do this function thats baked in.   */
         $("#hide").click(function() {
-            $("#navpanel").hide(1500);
+            $("#navpanel").hide(1500); // The number is the animation speed
         });
 
         $("#show").click(function() {

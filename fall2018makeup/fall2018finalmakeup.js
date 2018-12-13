@@ -11,3 +11,10 @@ $("#story").val(selection);
 $("#story").load(selection);
 
 
+// extra credit clicks
+let clicks = 0;
+            $("#increment").click(function () {
+                clicks++;
+                $("#currentcount").html(clicks);
+            })
+

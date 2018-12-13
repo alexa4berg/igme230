@@ -72,7 +72,7 @@ footer, nav {
 
 header {
     grid-area: header;
-    background-color: lightpink;
+    background-color: green;
 }
 
 nav {
@@ -92,7 +92,7 @@ aside {
 
 footer {
     grid-area: footer;
-    background-color: lightpink;
+    background-color: green;
 }
 
 #yourgrid {

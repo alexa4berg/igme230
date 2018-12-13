@@ -12,7 +12,7 @@ $("#story").load(selection);
 
 // changing the story
 $("#colors").change(function() { //on change, when a new menu item is selected do this
-color = $(this).val(); //the verse which is my variable for the content information is set to the new value of the selected menu item.
+color = $(this).attr('id'); //the verse which is my variable for the content information is set to the new value of the selected menu item.
 $("#source").css("background-color", "color"); //upload the new verse and replace the old one
 });
 

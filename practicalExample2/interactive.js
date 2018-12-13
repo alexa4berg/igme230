@@ -1,8 +1,15 @@
-$(".menu").click(function () { // when menu is clicked
-    $(this).next(".items").slideToggle(); //the selected menus next items slide toggle
-});
+//$(".menu").click(function () { // when menu is clicked
+//    $(this).next(".items").slideToggle(); //the selected menus next items slide toggle
+//});
 
+// change back to .menu for top
+var targetedID;
+var paragraphs = $("p")
+paragraphs.click(function(){
+    targetedID = this.id;
+    $(targetedID).css("background-color", "green");
 
+})
 
 // sets the initial article txt
 

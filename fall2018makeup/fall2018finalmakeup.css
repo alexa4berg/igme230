@@ -20,7 +20,9 @@ body {
     margin: 0;
 }
 
-section, header, footer {
+section,
+header,
+footer {
     padding: .5rem;
 }
 
@@ -42,3 +44,48 @@ section, header, footer {
 /**************
 Your Formatting
 ***************/
+
+/*****************
+Grid Formatting
+*****************/
+
+/*mobile*/
+
+#pagegrid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "header""story""source""extracredit""nav""footer";
+    grid-template-rows: 80px auto auto auto auto 30px;
+
+}
+
+header {
+    grid-template-areas: header;
+    height: 80px;
+}
+
+#story {
+    grid-template-areas: story;
+}
+
+#story {
+    grid-template-areas: story;
+}
+
+#source {
+    grid-template-areas: source;
+}
+
+#extracredit {
+    grid-template-areas: extracredit;
+}
+
+nav {
+    grid-template-areas: nav;
+}
+
+footer {
+    grid-template-areas: footer;
+     height: 30px;
+}

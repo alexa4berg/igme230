@@ -84,31 +84,31 @@ Grid Formatting
 }
 
 header {
-    grid-template-areas: header;
+    grid-area: header;
     background-color: lightblue;
 }
 
 #story {
-    grid-template-areas: story;
+    grid-area: story;
     background-color: lightcyan;
 }
 
 #source {
-    grid-template-areas: source;
+    grid-area: source;
     background-color: salmon;
 }
 
 #extracredit {
-    grid-template-areas: extracredit;
+    grid-area: extracredit;
 }
 
 nav {
-    grid-template-areas: nav;
+    grid-area: nav;
     background-color: lavenderblush;
 }
 
 footer {
-    grid-template-areas: footer;
+    grid-area: footer;
     height: 30px;
     background-color: lightblue;
 }
@@ -123,9 +123,9 @@ footer {
             "nav story extracredit"
             "footer footer footer";
 
-        grid-template-columns: 200px 66vw 33vw;
+        grid-template-columns: 200px 66% 33%;
 
-        grid-template-rows: 80px .5fr .5fr 30px;
+        grid-template-rows: 80px 1fr 1fr 30px;
 
 
         width: 95%;
